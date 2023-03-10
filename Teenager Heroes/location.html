@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+font-family: Arial;
+padding: 15px;
+background-color: #00C9A7;
+background-image: url("https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/background2.jpeg?raw=true");
+background-repeat:no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: cover;
+    background-position: center;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #abff03;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: #961509;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid red;
+  border-top: none;
+  text-align: center;
+  height: 100%;
+  background-color: black;
+background-repeat: no-repeat;
+background-size: 100% auto;
+    background-position: center;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 4px 4px 4px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffd3ec;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+  
+  .collapsible {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align:  center;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.active, .collapsible:hover {
+  background-color: green;
+}
+
+.content1 {
+  padding: 18px;
+  display: none;
+  overflow: hidden;
+  background-color: yellow;
+  text-align: center;
+}
+
+.content1 ul {
+text-align: left;
+}
+
+li {
+text-align:left;
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <h2 style="color:#c4f7fb;text-align:center;">किशोर नायक</h2>
+   <a href="index.html">होम</a>
+   <a href="about.html">के बारे में</a>
+   <a href="news.html">समाचार</a>
+   <a href="character.html">चरित्र</a>
+   <a href="story.html">कहानी</a>
+   <a href="location.html">स्थान</a>
+   <a href="vehicles.html">वाहन</a>
+</div>
+
+<div class="tab">
+<button class="tablinks" onclick="openNav()">&#9776;</button>
+   <button class="tablinks" onclick="openCity(event, 'TH')">टीनएजर हीरोज</button>
+   <button class="tablinks" onclick="openCity(event, 'THC')">किशोर नायक: बच्चे</button>
+   <button class="tablinks" onclick="openCity(event, 'THA')">किशोर नायक: वयस्क</button>
+   <button class="tablinks" onclick="openCity(event, 'VRTH')">VR टीनएजर हीरोज</button>
+</div>
+<div style="font-weight:bold;background-color: blue;text-align: center;color:yellow;padding:10px;">
+   <h1>किशोर नायकों की घोषणा</h1>
+   <p id="announcements"></p>
+</div>
+
+<div id="TH" class="tabcontent">
+<div style="color: #080691;background-color:#00fcf8;margin:18px;padding:1px;">
+<h3>टीनएजर हीरोज</h3>
+</div>
+<br>
+<div style="color: #080691;background-color:#00fcf8;margin:18px;padding:10px;">
+<h1>स्थान</h1>
+<p>टीनएजर हीरोज बुक सीरीज में टीनेजर हीरोज टीम द्वारा विकसित और निर्मित कई शानदार स्थान शामिल हैं। यहां सूचीबद्ध सभी स्थान टीनएजर हीरोज के कई सीज़न में प्रीमियर किए गए प्राथमिक स्थान हैं। हमारे यहां टीनएजर हीरोज के सभी स्थानों की सूची है।</p>
+</div>
+<br>
+<div style="color: #080691;background-color:#00fcf8;margin:18px;padding:10px;border-style: solid;border-width: 5px;border-color: purple;">
+<h1>पर्ले</h1>
+<p>पर्ले, ली हुई और हू जी का गृहनगर है, जहां वे बड़े हुए थे। पर्ल एक उन्नत शहर है। टीनएजर हीरोज सीज़न 1 में पेरले मुख्य शहर है। पेरले ने सबसे अच्छा, सबसे स्वच्छ वातावरण दिखाया। पर्ल भविष्य में एक जगह पर सेट है।</p>
+<br>
+   <h3>स्थान</h3>
+   <br>
+   <li>वीआरज़ू: वीआरज़ू पर्ल में एक चिड़ियाघर है। यह आगंतुकों के लिए आभासी वास्तविकता का उपयोग करके चिड़ियाघर में जानवरों को देखने के लिए एक आभासी वास्तविकता चिड़ियाघर है।</li>
+   <br>
+   <li>वीआर संग्रहालय: वीआर संग्रहालय पर्ल में एक बड़ा संग्रहालय है। यह एक आभासी वास्तविकता संग्रहालय है, जहां हर कोई बिना टहलें पूरे संग्रहालय का दौरा कर सकता है और आभासी वास्तविकता का उपयोग करके प्रदर्शित हर चीज को देख सकता है।</li>
+   <br>
+   <li>VRmall: VRmall पर्ल में एक मेगा शॉपिंग मॉल है। यह हर किसी के आने और सामान खरीदने के लिए एक आभासी वास्तविकता मॉल है। आगंतुक सामान खरीदने के लिए आभासी वास्तविकता मॉल में जाने के लिए वीआर का उपयोग कर सकते हैं।</li>
+   <br>
+   <li>जंगल: Perle में एक विशाल वन भी है। पर्ल जंगल में ब्लूबेरी से लेकर केले तक कई तरह के पेड़ उगते हैं। मेगा फ़ॉरेस्ट पर्यावरण को भी साफ़ रखने में मदद करता है।</li>
+   <br>
+   <li>VRschool: पर्ल का एक स्कूल भी है। पर्ल के बच्चे आभासी वास्तविकता में सीखने के लिए स्कूल जा सकते हैं। पर्ल छात्रों को अध्ययन करने के लिए सर्वोत्तम तकनीक प्रदान करता है।</li>
+   <br>
+   <li>VRcinema: Perle में सभी नागरिकों के लिए भी एक सिनेमाघर है। Perle Cinema सभी दर्शकों को आभासी वास्तविकता में फिल्म देखने की सुविधा देता है। दर्शक वीआर सिनेमा पर अपने परिवार और दोस्तों के साथ फिल्में देख सकते हैं।</li>
+   <br>
+   <li>VRbank: Perle का एक बैंक भी है। वीआरबैंक हर किसी को आभासी वास्तविकता की दुनिया के अंदर बैंक में पैसे बचाने की सुविधा देता है। वीआरबैंक हर किसी को वर्चुअल रियलिटी बैंक में भी पैसे बचाने की सुविधा देता है।</li>
+   <br>
+   <li>पीसफुल सेंट्रल: पीसफुल सेंट्रल वह पड़ोस है जहां जुड़वा बच्चों के घर हैं और रहते हैं। शांतिपूर्ण सेंट्रल एक अद्भुत और स्वच्छ पड़ोस है।</li>
+  </div>
+</div>
+
+<div id="THC" class="tabcontent">
+<div style="color: #1c2b03;background-color:#99f505;margin:18px;padding:1px;">
+<h3>किशोर नायक: बच्चे</h3>
+</div>
+<br>
+  <div style="color: #1c2b03;background-color:#99f505;margin:18px;padding:10px;">
+<h1>स्थान</h1>
+<p>टीनएजर हीरोज: चिल्ड्रन बुक सीरीज में वर्तमान में टीनेजर हीरोज टीम द्वारा विकसित और निर्मित कई शानदार स्थान शामिल हैं। यहां सूचीबद्ध सभी स्थान टीनएजर हीरोज: चिल्ड्रन के कई सीज़न में प्रीमियर किए गए प्राथमिक स्थान हैं। हमारे पास टीनएजर हीरोज: चिल्ड्रेन हियर के सभी स्थानों की सूची है।</p>
+  </div>
+  <br>
+<div style="color: #1c2b03;background-color:#99f505;margin:18px;padding:10px;border-style: solid;border-width: 5px;border-color: red;">
+<h1>पर्ले</h1>
+<p>पर्ले, ली हुई और हू जी का गृहनगर है, जहां वे बड़े हुए थे। पर्ल एक उन्नत शहर है। टीनएजर हीरोज सीज़न 1 में पेरले मुख्य शहर है। पेरले ने सबसे अच्छा, सबसे स्वच्छ वातावरण दिखाया। पर्ल भविष्य में एक जगह पर सेट है।</p>
+<br>
+   <h3>स्थान</h3>
+   <br>
+   <li>वीआरज़ू: वीआरज़ू पर्ल में एक चिड़ियाघर है। यह आगंतुकों के लिए आभासी वास्तविकता का उपयोग करके चिड़ियाघर में जानवरों को देखने के लिए एक आभासी वास्तविकता चिड़ियाघर है।</li>
+   <br>
+   <li>वीआर संग्रहालय: वीआर संग्रहालय पर्ल में एक बड़ा संग्रहालय है। यह एक आभासी वास्तविकता संग्रहालय है, जहां हर कोई बिना टहलें पूरे संग्रहालय का दौरा कर सकता है और आभासी वास्तविकता का उपयोग करके प्रदर्शित हर चीज को देख सकता है।</li>
+   <br>
+   <li>VRmall: VRmall पर्ल में एक मेगा शॉपिंग मॉल है। यह हर किसी के आने और सामान खरीदने के लिए एक आभासी वास्तविकता मॉल है। आगंतुक सामान खरीदने के लिए आभासी वास्तविकता मॉल में जाने के लिए वीआर का उपयोग कर सकते हैं।</li>
+   <br>
+   <li>जंगल: Perle में एक विशाल वन भी है। पर्ल जंगल में ब्लूबेरी से लेकर केले तक कई तरह के पेड़ उगते हैं। मेगा फ़ॉरेस्ट पर्यावरण को भी साफ़ रखने में मदद करता है।</li>
+   <br>
+   <li>VRschool: पर्ल का एक स्कूल भी है। पर्ल के बच्चे आभासी वास्तविकता में सीखने के लिए स्कूल जा सकते हैं। पर्ल छात्रों को अध्ययन करने के लिए सर्वोत्तम तकनीक प्रदान करता है।</li>
+   <br>
+   <li>VRcinema: Perle में सभी नागरिकों के लिए भी एक सिनेमाघर है। Perle Cinema सभी दर्शकों को आभासी वास्तविकता में फिल्म देखने की सुविधा देता है। दर्शक वीआर सिनेमा पर अपने परिवार और दोस्तों के साथ फिल्में देख सकते हैं।</li>
+   <br>
+   <li>VRbank: Perle का एक बैंक भी है। वीआरबैंक हर किसी को आभासी वास्तविकता की दुनिया के अंदर बैंक में पैसे बचाने की सुविधा देता है। वीआरबैंक हर किसी को वर्चुअल रियलिटी बैंक में भी पैसे बचाने की सुविधा देता है।</li>
+   <br>
+   <li>पीसफुल सेंट्रल: पीसफुल सेंट्रल वह पड़ोस है जहां जुड़वा बच्चों के घर हैं और रहते हैं। शांतिपूर्ण सेंट्रल एक अद्भुत और स्वच्छ पड़ोस है।</li>
+  </div>
+</div>
+
+<div id="THA" class="tabcontent">
+<div style="color: #6b1005;background-color:pink;margin:18px;padding:1px;">
+<h3>किशोर नायक: वयस्क</h3>
+</div>
+<br>
+  <div style="color: #6b1005;background-color:pink;margin:18px;padding:10px;">
+<h1>स्थान</h1>
+<p>टीनेजर हीरोज: एडल्ट बुक सीरीज में टीनेजर हीरोज: एडल्ट टीम द्वारा विकसित और निर्मित कई भयानक स्थान भी शामिल हैं। यहां सूचीबद्ध सभी स्थान टीनएजर हीरोज: एडल्ट के कई सीज़न में प्रीमियर किए गए प्राथमिक स्थान हैं। हमारे पास टीनएजर हीरोज: एडल्ट में सभी स्थानों की एक सूची है।</p>
+  </div>
+    <br>
+<div style="color: #6b1005;background-color:pink;margin:18px;padding:10px;border-style: solid;border-width: 5px;border-color: red;">
+<h1>पर्ले</h1>
+<p>पर्ले, ली हुई और हू जी का गृहनगर है, जहां वे बड़े हुए थे। पर्ल एक उन्नत शहर है। टीनएजर हीरोज सीज़न 1 में पेरले मुख्य शहर है। पेरले ने सबसे अच्छा, सबसे स्वच्छ वातावरण दिखाया। पर्ल भविष्य में एक जगह पर सेट है।</p>
+<br>
+   <h3>स्थान</h3>
+   <br>
+   <li>वीआरज़ू: वीआरज़ू पर्ल में एक चिड़ियाघर है। यह आगंतुकों के लिए आभासी वास्तविकता का उपयोग करके चिड़ियाघर में जानवरों को देखने के लिए एक आभासी वास्तविकता चिड़ियाघर है।</li>
+   <br>
+   <li>वीआर संग्रहालय: वीआर संग्रहालय पर्ल में एक बड़ा संग्रहालय है। यह एक आभासी वास्तविकता संग्रहालय है, जहां हर कोई बिना टहलें पूरे संग्रहालय का दौरा कर सकता है और आभासी वास्तविकता का उपयोग करके प्रदर्शित हर चीज को देख सकता है।</li>
+   <br>
+   <li>VRmall: VRmall पर्ल में एक मेगा शॉपिंग मॉल है। यह हर किसी के आने और सामान खरीदने के लिए एक आभासी वास्तविकता मॉल है। आगंतुक सामान खरीदने के लिए आभासी वास्तविकता मॉल में जाने के लिए वीआर का उपयोग कर सकते हैं।</li>
+   <br>
+   <li>जंगल: Perle में एक विशाल वन भी है। पर्ल जंगल में ब्लूबेरी से लेकर केले तक कई तरह के पेड़ उगते हैं। मेगा फ़ॉरेस्ट पर्यावरण को भी साफ़ रखने में मदद करता है।</li>
+   <br>
+   <li>VRschool: पर्ल का एक स्कूल भी है। पर्ल के बच्चे आभासी वास्तविकता में सीखने के लिए स्कूल जा सकते हैं। पर्ल छात्रों को अध्ययन करने के लिए सर्वोत्तम तकनीक प्रदान करता है।</li>
+   <br>
+   <li>VRcinema: Perle में सभी नागरिकों के लिए भी एक सिनेमाघर है। Perle Cinema सभी दर्शकों को आभासी वास्तविकता में फिल्म देखने की सुविधा देता है। दर्शक वीआर सिनेमा पर अपने परिवार और दोस्तों के साथ फिल्में देख सकते हैं।</li>
+   <br>
+   <li>VRbank: Perle का एक बैंक भी है। वीआरबैंक हर किसी को आभासी वास्तविकता की दुनिया के अंदर बैंक में पैसे बचाने की सुविधा देता है। वीआरबैंक हर किसी को वर्चुअल रियलिटी बैंक में भी पैसे बचाने की सुविधा देता है।</li>
+   <br>
+   <li>पीसफुल सेंट्रल: पीसफुल सेंट्रल वह पड़ोस है जहां जुड़वा बच्चों के घर हैं और रहते हैं। शांतिपूर्ण सेंट्रल एक अद्भुत और स्वच्छ पड़ोस है।</li></div>
+</div>
+
+<div id="VRTH" class="tabcontent">
+<div style="color: purple;background-color:#a4fc00;margin:18px;padding:1px;">
+<h3>VR टीनएजर हीरोज</h3>
+</div>
+<br>
+  <div style="color: purple;background-color:#a4fc00;margin:18px;padding:10px;">
+<h1>स्थान</h1>
+<p>VR टीनएजर हीरोज बुक सीरीज़ में टीनएजर हीरोज टीम द्वारा विकसित और निर्मित कई शानदार स्थान शामिल हैं। यहां सूचीबद्ध सभी स्थान वीआर टीनएजर हीरोज के कई सीज़न में प्रीमियर किए गए प्राथमिक स्थान हैं। वर्तमान में हमारे पास VR टीनएजर हीरोज में सभी स्थानों की एक सूची है।</p>
+  </div>
+    <br>
+<div style="color: purple;background-color:#a4fc00;margin:18px;padding:10px;border-style: solid;border-width: 5px;border-color: red;">
+<h1>पर्ले</h1>
+<p>पर्ले, ली हुई और हू जी का गृहनगर है, जहां वे बड़े हुए थे। पर्ल एक उन्नत शहर है। टीनएजर हीरोज सीज़न 1 में पेरले मुख्य शहर है। पेरले ने सबसे अच्छा, सबसे स्वच्छ वातावरण दिखाया। पर्ल भविष्य में एक जगह पर सेट है।</p>
+<br>
+   <h3>स्थान</h3>
+   <br>
+   <li>वीआरज़ू: वीआरज़ू पर्ल में एक चिड़ियाघर है। यह आगंतुकों के लिए आभासी वास्तविकता का उपयोग करके चिड़ियाघर में जानवरों को देखने के लिए एक आभासी वास्तविकता चिड़ियाघर है।</li>
+   <br>
+   <li>वीआर संग्रहालय: वीआर संग्रहालय पर्ल में एक बड़ा संग्रहालय है। यह एक आभासी वास्तविकता संग्रहालय है, जहां हर कोई बिना टहलें पूरे संग्रहालय का दौरा कर सकता है और आभासी वास्तविकता का उपयोग करके प्रदर्शित हर चीज को देख सकता है।</li>
+   <br>
+   <li>VRmall: VRmall पर्ल में एक मेगा शॉपिंग मॉल है। यह हर किसी के आने और सामान खरीदने के लिए एक आभासी वास्तविकता मॉल है। आगंतुक सामान खरीदने के लिए आभासी वास्तविकता मॉल में जाने के लिए वीआर का उपयोग कर सकते हैं।</li>
+   <br>
+   <li>जंगल: Perle में एक विशाल वन भी है। पर्ल जंगल में ब्लूबेरी से लेकर केले तक कई तरह के पेड़ उगते हैं। मेगा फ़ॉरेस्ट पर्यावरण को भी साफ़ रखने में मदद करता है।</li>
+   <br>
+   <li>VRschool: पर्ल का एक स्कूल भी है। पर्ल के बच्चे आभासी वास्तविकता में सीखने के लिए स्कूल जा सकते हैं। पर्ल छात्रों को अध्ययन करने के लिए सर्वोत्तम तकनीक प्रदान करता है।</li>
+   <br>
+   <li>VRcinema: Perle में सभी नागरिकों के लिए भी एक सिनेमाघर है। Perle Cinema सभी दर्शकों को आभासी वास्तविकता में फिल्म देखने की सुविधा देता है। दर्शक वीआर सिनेमा पर अपने परिवार और दोस्तों के साथ फिल्में देख सकते हैं।</li>
+   <br>
+   <li>VRbank: Perle का एक बैंक भी है। वीआरबैंक हर किसी को आभासी वास्तविकता की दुनिया के अंदर बैंक में पैसे बचाने की सुविधा देता है। वीआरबैंक हर किसी को वर्चुअल रियलिटी बैंक में भी पैसे बचाने की सुविधा देता है।</li>
+   <br>
+   <li>पीसफुल सेंट्रल: पीसफुल सेंट्रल वह पड़ोस है जहां जुड़वा बच्चों के घर हैं और रहते हैं। शांतिपूर्ण सेंट्रल एक अद्भुत और स्वच्छ पड़ोस है।</li>
+</div>
+    <br>
+<div style="color: purple;background-color:#a4fc00;margin:18px;padding:10px;border-style: solid;border-width: 5px;border-color: red;">
+<h1>VRworld</h1>
+<p>VRWorld, VR टीनएजर हीरोज बुक सीरीज़ की एक आभासी वास्तविकता की दुनिया है। वीआरवर्ल्ड एक उन्नत गोपनीयता-अनुकूल आभासी वास्तविकता दुनिया है जिसका ली हुई, हू जी, मिन ली और कई अन्य लोग उपयोग करते हैं और अपने जीवन में जीते हैं। वीआर टीनएजर हीरोज पुस्तक श्रृंखला के लिए वीआरवर्ल्ड मुख्य स्थान है।</p>
+<br>
+   <h3>स्थान</h3>
+   <br>
+   <li>वीआरलाइब्रेरी: वीआरलाइब्रेरी आभासी वास्तविकता पर आधारित एक लाइब्रेरी है। वीआरलाइब्रेरी एक ऐसी जगह है जहां ली हुई और हू जी वर्चुअल प्रोफाइल चुपचाप किताबें पढ़ने जाते हैं।</li>
+   <br>
+   <li>वीआरमॉल: वीआरमॉल वीआरवर्ल्ड की आभासी वास्तविकता दुनिया के अंदर एक मॉल है। वीआर मॉल एक ऐसी जगह है जहां जुड़वा बच्चे और उनके दोस्त अपनी खरीदारी करते हैं, यह आजकल ई-कॉमर्स प्लेटफॉर्म के समान जगह है।</li>
+   <br>
+   <li>VRBank: VRBank एक ऐसी जगह है जहां हर कोई आभासी वास्तविकता की दुनिया में पैसा बचाता है। VRBank एक ऐसी जगह है जहां हर कोई अपने वर्चुअल रियलिटी वॉलेट को रीयल-टाइम में नेटवर्क पर चेक कर सकता है।</li>
+   <br>
+   <li>वीआरसिनेमा: वीआरसिनेमा एक ऐसी जगह है जहां हर कोई आभासी वास्तविकता की दुनिया में एक कमरे में फिल्में देखता है। वीआरसीनेमा एक ऐसी जगह है जहां आप एक विशिष्ट फिल्म देखने के लिए एक कमरे में टिकट बुक कर सकते हैं।</li>
+   <br>
+   <li>VRMuseum: VRMuseum एक ऐसी जगह है जहां हर कोई घर से बाहर निकले बिना आभासी वास्तविकता की दुनिया में ऐतिहासिक और वैज्ञानिक महत्व वाली कला, वस्तुओं और चीजों को देखने के लिए जा सकता है।</li>
+   <br>
+   <li>वीआरस्कूल: वीआरस्कूल वह स्थान है जहां जुड़वा बच्चे चीजें सीखते हैं, अपने दोस्तों से मिलते हैं और अपना अधिकांश समय वहीं बिताते हैं। वीआरएसस्कूल आभासी वास्तविकता की दुनिया में स्थित एक उन्नत स्कूल है।</li></div>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<script src="announcement.js"></script>
+  <!-- Put this at the end of the <body> tag -->
+<script src="https://swetrix.org/swetrix.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    swetrix.init('tUOZrSzLs6uA')
+    swetrix.trackViews()
+  })
+</script>
+<noscript>
+  <img
+    src="https://api.swetrix.com/log/noscript?pid=tUOZrSzLs6uA"
+    alt=""
+    referrerpolicy="no-referrer-when-downgrade"
+  />
+</noscript>
+
+</body>
+</html> 

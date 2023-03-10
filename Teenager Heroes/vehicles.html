@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vehicles</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+font-family: Arial;
+padding: 15px;
+background-color: #00C9A7;
+background-image: url("https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/background2.jpeg?raw=true");
+background-repeat:no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: cover;
+    background-position: center;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #abff03;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: #961509;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid red;
+  border-top: none;
+  text-align: center;
+  height: 100%;
+  background-color: black;
+background-repeat: no-repeat;
+background-size: 100% auto;
+    background-position: center;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 4px 4px 4px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffd3ec;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+  
+  .collapsible {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align:  center;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.active, .collapsible:hover {
+  background-color: green;
+}
+
+.content1 {
+  padding: 18px;
+  display: none;
+  overflow: hidden;
+  background-color: yellow;
+  text-align: center;
+}
+
+.content1 ul {
+text-align: left;
+}
+
+li {
+text-align:left;
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <h2 style="color:#c4f7fb;text-align:center;">किशोर नायक</h2>
+   <a href="index.html">होम</a>
+   <a href="about.html">के बारे में</a>
+   <a href="news.html">समाचार</a>
+   <a href="character.html">चरित्र</a>
+   <a href="story.html">कहानी</a>
+   <a href="location.html">स्थान</a>
+   <a href="vehicles.html">वाहन</a>
+</div>
+
+<div class="tab">
+<button class="tablinks" onclick="openNav()">&#9776;</button>
+   <button class="tablinks" onclick="openCity(event, 'TH')">टीनएजर हीरोज</button>
+   <button class="tablinks" onclick="openCity(event, 'THC')">किशोर नायक: बच्चे</button>
+   <button class="tablinks" onclick="openCity(event, 'THA')">किशोर नायक: वयस्क</button>
+   <button class="tablinks" onclick="openCity(event, 'VRTH')">VR टीनएजर हीरोज</button>
+</div>
+<div style="font-weight:bold;background-color: blue;text-align: center;color:yellow;padding:10px;">
+   <h1>किशोर नायकों की घोषणा</h1>
+   <p id="announcements"></p>
+</div>
+
+<div id="TH" class="tabcontent">
+<div style="color: #080691;background-color:#00fcf8;margin:18px;padding:1px;">
+<h3>टीनएजर हीरोज</h3>
+</div>
+<br>
+<div style="color: #080691;background-color:#00fcf8;margin:18px;padding:10px;">
+<h1>वाहन</h1>
+<p>टीनएजर हीरोज बुक सीरीज में कई शानदार वाहन हैं! टीनएजर हीरोज बुक सीरीज़ में टीनएजर हीरोज टीम द्वारा विकसित कई शानदार वाहन शामिल हैं, जिन्हें टीनएजर हीरोज बुक सीरीज़ की कहानियों के अंदर उपयोग करने और सवारी करने के लिए पात्रों के लिए बनाया गया है। </p>
+  </div>
+<br>
+<div style="color: #080691;background-color:#00fcf8;margin:18px;padding:10px;border-style: solid;border-width: 5px;border-color: purple;">
+<h2>होवर कार</h2>
+<p>होवर कार, ली हुई और हू जी के स्वामित्व वाला वाहन है, जो चारों ओर घूमने का एक तरीका है। यह शहर के चारों ओर उड़ सकता है और बाहरी अंतरिक्ष तक भी जा सकता है। हॉवर कार का आविष्कार ली हुई और हू जी ने तब किया था जब वे 11 साल के थे।</p>
+<p>Hover Car पानी के अंदर जा सकती है और अंतरिक्ष में उड़ान भर सकती है। यह खलनायकों को खोजने और रोकने के लिए ली हुई और हू जी को शहर की नदी में पानी के नीचे जाने में मदद कर सकता है। होवर कार, ली हुई और हू जी के लिए कई शानदार विशेषताएं और क्षमताएं प्रदान करती है। सभी विशेषताएं नीचे सूचीबद्ध हैं:</p>
+<br>
+<li>फ्लाइंग: हॉवर कार पर्ल के चारों ओर उड़ सकती है, ली हुई और हू जी को उनकी इच्छानुसार किसी भी स्थान पर ला सकती है।</li>
+<br>
+<li>पनडुब्बी: होवर कार पनडुब्बी की तरह पानी के अंदर भी जा सकती है। होवर कार ली हुई और हू जी को पानी के नीचे की सबसे गहरी जगह में ला सकती है।</li>
+<br>
+<li>गति: ली हुई और हू जी को कहीं भी पहुंचाने के लिए होवर कार आसमान, पानी के नीचे और जमीन पर सुपर फास्ट जा सकती है।</li>
+</div>
+</div>
+
+<div id="THC" class="tabcontent">
+<div style="color: #1c2b03;background-color:#99f505;margin:18px;padding:1px;">
+<h3>किशोर नायक: बच्चे</h3>
+</div>
+<br>
+  <div style="color: #1c2b03;background-color:#99f505;margin:18px;padding:10px;">
+  <h1>वाहन</h1>
+<p>टीनएजर हीरोज: चिल्ड्रन बुक सीरीज में कई शानदार वाहन हैं! टीनएजर हीरोज: चिल्ड्रेन बुक सीरीज़ में टीनएजर हीरोज टीम द्वारा विकसित कई भयानक वाहन शामिल हैं, जिन्हें टीनएजर हीरोज: चिल्ड्रन बुक सीरीज़ की कहानियों के अंदर उपयोग करने और सवारी करने के लिए पात्रों के लिए बनाया गया है। </p>
+  </div>
+  <br>
+<div style="color: #1c2b03;background-color:#99f505;margin:18px;padding:10px;border-style: solid;border-width: 5px;border-color: red;">
+<h2>होवर कार</h2>
+<p>होवर कार, ली हुई और हू जी के स्वामित्व वाला वाहन है, जो चारों ओर घूमने का एक तरीका है। यह शहर के चारों ओर उड़ सकता है और बाहरी अंतरिक्ष तक भी जा सकता है। हॉवर कार का आविष्कार ली हुई और हू जी ने तब किया था जब वे 11 साल के थे।</p>
+<p>Hover Car पानी के अंदर जा सकती है और अंतरिक्ष में उड़ान भर सकती है। यह खलनायकों को खोजने और रोकने के लिए ली हुई और हू जी को शहर की नदी में पानी के नीचे जाने में मदद कर सकता है। होवर कार, ली हुई और हू जी के लिए कई शानदार विशेषताएं और क्षमताएं प्रदान करती है। सभी विशेषताएं नीचे सूचीबद्ध हैं:</p>
+<br>
+<li>फ्लाइंग: हॉवर कार पर्ल के चारों ओर उड़ सकती है, ली हुई और हू जी को उनकी इच्छानुसार किसी भी स्थान पर ला सकती है।</li>
+<br>
+<li>पनडुब्बी: होवर कार पनडुब्बी की तरह पानी के अंदर भी जा सकती है। होवर कार ली हुई और हू जी को पानी के नीचे की सबसे गहरी जगह में ला सकती है।</li>
+<br>
+<li>गति: ली हुई और हू जी को कहीं भी पहुंचाने के लिए होवर कार आसमान, पानी के नीचे और जमीन पर सुपर फास्ट जा सकती है।</li>
+</div>
+</div>
+
+<div id="THA" class="tabcontent">
+<div style="color: #6b1005;background-color:pink;margin:18px;padding:1px;">
+<h3>किशोर नायक: वयस्क</h3>
+</div>
+<br>
+  <div style="color: #6b1005;background-color:pink;margin:18px;padding:10px;">
+<h1>वाहन</h1>
+<p>टीनएजर हीरोज: एडल्ट बुक सीरीज में कई शानदार वाहन शामिल हैं! टीनएजर हीरोज: एडल्ट बुक सीरीज़ में टीनएजर हीरोज टीम द्वारा विकसित कई भयानक वाहनों को दिखाया गया है, जो टीनएजर हीरोज के अंदर उपयोग करने और सवारी करने के लिए हैं: एडल्ट बुक सीरीज़ की कहानियाँ। </p>
+  </div>
+    <br>
+<div style="color: #6b1005;background-color:pink;margin:18px;padding:10px;border-style: solid;border-width: 5px;border-color: blue;">
+<h2>होवर कार</h2>
+<p>होवर कार, ली हुई और हू जी के स्वामित्व वाला वाहन है, जो चारों ओर घूमने का एक तरीका है। यह शहर के चारों ओर उड़ सकता है और बाहरी अंतरिक्ष तक भी जा सकता है। हॉवर कार का आविष्कार ली हुई और हू जी ने तब किया था जब वे 11 साल के थे।</p>
+<p>Hover Car पानी के अंदर जा सकती है और अंतरिक्ष में उड़ान भर सकती है। यह खलनायकों को खोजने और रोकने के लिए ली हुई और हू जी को शहर की नदी में पानी के नीचे जाने में मदद कर सकता है। होवर कार, ली हुई और हू जी के लिए कई शानदार विशेषताएं और क्षमताएं प्रदान करती है। सभी विशेषताएं नीचे सूचीबद्ध हैं:</p>
+<br>
+<li>फ्लाइंग: हॉवर कार पर्ल के चारों ओर उड़ सकती है, ली हुई और हू जी को उनकी इच्छानुसार किसी भी स्थान पर ला सकती है।</li>
+<br>
+<li>पनडुब्बी: होवर कार पनडुब्बी की तरह पानी के अंदर भी जा सकती है। होवर कार ली हुई और हू जी को पानी के नीचे की सबसे गहरी जगह में ला सकती है।</li>
+<br>
+<li>गति: ली हुई और हू जी को कहीं भी पहुंचाने के लिए होवर कार आसमान, पानी के नीचे और जमीन पर सुपर फास्ट जा सकती है।</li>
+</div>
+</div>
+
+<div id="VRTH" class="tabcontent">
+<div style="color: purple;background-color:#a4fc00;margin:18px;padding:1px;">
+<h3>VR टीनएजर हीरोज</h3>
+</div>
+<br>
+  <div style="color: purple;background-color:#a4fc00;margin:18px;padding:10px;">
+<h1>वाहन</h1>
+<p>VR टीनएजर हीरोज बुक सीरीज़ में कई शानदार वाहन हैं! VR टीनएजर हीरोज बुक सीरीज़ में टीनएजर हीरोज टीम द्वारा विकसित कई भयानक वाहन शामिल हैं, जो वीआर टीनएजर हीरोज बुक सीरीज़ की कहानियों के अंदर पात्रों का उपयोग करने और सवारी करने के लिए हैं। </p>
+  </div>
+    <br>
+<div style="color: purple;background-color:#a4fc00;margin:18px;padding:10px;border-style: solid;border-width: 5px;border-color: red;">
+<h2>होवर कार</h2>
+<p>होवर कार, ली हुई और हू जी के स्वामित्व वाला वाहन है, जो चारों ओर घूमने का एक तरीका है। यह शहर के चारों ओर उड़ सकता है और बाहरी अंतरिक्ष तक भी जा सकता है। हॉवर कार का आविष्कार ली हुई और हू जी ने तब किया था जब वे 11 साल के थे।</p>
+<p>Hover Car पानी के अंदर जा सकती है और अंतरिक्ष में उड़ान भर सकती है। यह खलनायकों को खोजने और रोकने के लिए ली हुई और हू जी को शहर की नदी में पानी के नीचे जाने में मदद कर सकता है। होवर कार, ली हुई और हू जी के लिए कई शानदार विशेषताएं और क्षमताएं प्रदान करती है। सभी विशेषताएं नीचे सूचीबद्ध हैं:</p>
+<br>
+<li>फ्लाइंग: हॉवर कार पर्ल के चारों ओर उड़ सकती है, ली हुई और हू जी को उनकी इच्छानुसार किसी भी स्थान पर ला सकती है।</li>
+<br>
+<li>पनडुब्बी: होवर कार पनडुब्बी की तरह पानी के अंदर भी जा सकती है। होवर कार ली हुई और हू जी को पानी के नीचे की सबसे गहरी जगह में ला सकती है।</li>
+<br>
+<li>गति: ली हुई और हू जी को कहीं भी पहुंचाने के लिए होवर कार आसमान, पानी के नीचे और जमीन पर सुपर फास्ट जा सकती है।</li>
+</div>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<script src="announcement.js"></script>
+  <!-- Put this at the end of the <body> tag -->
+<script src="https://swetrix.org/swetrix.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    swetrix.init('tUOZrSzLs6uA')
+    swetrix.trackViews()
+  })
+</script>
+<noscript>
+  <img
+    src="https://api.swetrix.com/log/noscript?pid=tUOZrSzLs6uA"
+    alt=""
+    referrerpolicy="no-referrer-when-downgrade"
+  />
+</noscript>
+
+</body>
+</html> 
